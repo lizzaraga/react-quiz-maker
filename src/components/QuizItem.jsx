@@ -39,7 +39,7 @@ export default function QuizItem({question, answers, onAnswerSelected, correctAn
 
   return (
     <div className="d-flex flex-column ">
-      <h6>{ question }</h6>
+      <h6 dangerouslySetInnerHTML={{__html: question}}></h6>
 
       <div className="d-flex gap-2 ">
       {answers.map((answer, index) => (

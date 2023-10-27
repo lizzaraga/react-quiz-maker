@@ -8,8 +8,8 @@ QuizAnswer.propTypes = {
 export default function QuizAnswer({answer, onSelect, className}){
 
   return (
-    <button onClick={onSelect} className={className}>
-      { answer }
+    <button dangerouslySetInnerHTML={{__html: answer}} onClick={onSelect} className={className}>
+      
     </button>
   )
 }
